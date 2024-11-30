@@ -61,6 +61,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
+import com.example.retrofitecommerce.ui.theme.HomeScreen
+import com.plcoding.meditationuiyoutube.ui.theme.DeepBlue
 import kotlinx.coroutines.Delay
 
 class MainActivity : ComponentActivity() {
@@ -68,9 +70,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
 
-           Box(contentAlignment = Alignment.Center){
-               CirculerProgress(percentage = 1f, number = 100)
-           }
+Box(modifier = Modifier.background(DeepBlue).fillMaxSize()){
+    HomeScreen()
+}
         }
     }
 
@@ -246,3 +248,5 @@ fun CirculerProgress(
         )
     }
 }
+
+
