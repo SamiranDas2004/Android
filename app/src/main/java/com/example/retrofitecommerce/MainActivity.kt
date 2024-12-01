@@ -61,6 +61,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
+import com.example.calculator.ui.theme.CalculatorUI
+//import com.example.retrofitecommerce.ui.theme.Counter
 import com.example.retrofitecommerce.ui.theme.HomeScreen
 import com.plcoding.meditationuiyoutube.ui.theme.DeepBlue
 import kotlinx.coroutines.Delay
@@ -70,8 +72,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
 
-Box(modifier = Modifier.background(DeepBlue).fillMaxSize()){
-    HomeScreen()
+Box(){
+//    HomeScreen()
+   CalculatorUI()
+
 }
         }
     }
